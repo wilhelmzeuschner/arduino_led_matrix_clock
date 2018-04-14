@@ -17,3 +17,7 @@ The following libraries are needed:
 https://github.com/Makuna/Rtc
 https://github.com/MajicDesigns/MD_MAX72XX
 Optional: https://github.com/adafruit/DHT-sensor-library
+
+This code, combined with the enclosure is quite flexible, thanks to the Arduino IDE.
+You could use an ESP8266 for example and get accurate time information via NTP.
+Ultimately you can display whatever you want on these matrices...
