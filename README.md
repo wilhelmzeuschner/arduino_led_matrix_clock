@@ -24,4 +24,4 @@ You could use an ESP8266 for example and get accurate time information via NTP.
 Ultimately you can display whatever you want on these matrices...
 
 Here is an image of the clock:
-![Clock]https://github.com/wilhelmzeuschner/arduino_led_matrix_clock/blob/master/images/IMG_20180414_124421.jpg
+![Clock](https://github.com/wilhelmzeuschner/arduino_led_matrix_clock/blob/master/images/IMG_20180414_124421.jpg)
