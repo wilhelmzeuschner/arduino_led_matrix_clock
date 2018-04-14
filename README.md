@@ -14,10 +14,8 @@ https://www.thingiverse.com/thing:2861401
 
 
 The following libraries are needed:
-https://github.com/Makuna/Rtc
 
-https://github.com/MajicDesigns/MD_MAX72XX
-
+https://github.com/Makuna/Rtc & https://github.com/MajicDesigns/MD_MAX72XX
 Optional: https://github.com/adafruit/DHT-sensor-library
 
 This code, combined with the enclosure is quite flexible, thanks to the Arduino IDE.
