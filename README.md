@@ -10,3 +10,9 @@ Therefore I decided to use a DHT11 sensor which is placed further away, on the e
 Since I²C uses two wires for communication, it would be possible to place the RTC on the end of the cable too.
 
 In addition to the code, I have created a 3D-printable model for this clock.
+
+
+The following libraries are needed:
+https://github.com/Makuna/Rtc
+https://github.com/MajicDesigns/MD_MAX72XX
+Optional: https://github.com/adafruit/DHT-sensor-library
