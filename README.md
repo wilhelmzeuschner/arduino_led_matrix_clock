@@ -9,7 +9,8 @@ Unfortunately the LEDs and / or their driver chip becomes quite warm which is ob
 Therefore I decided to use a DHT11 sensor which is placed further away, on the end of the power cable. One of the former data lines in an old USB cable can be used to communicate with the sensor. 
 Since I²C uses two wires for communication, it would be possible to place the RTC on the end of the cable too.
 
-In addition to the code, I have created a 3D-printable model for this clock.
+In addition to the code, I have created a 3D-printable model for this clock:
+https://www.thingiverse.com/thing:2861401
 
 
 The following libraries are needed:
