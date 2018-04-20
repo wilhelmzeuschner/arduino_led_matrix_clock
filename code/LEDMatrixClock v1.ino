@@ -1,4 +1,5 @@
-//Wilhelm Zeuschner - Started on 14.03.2018
+//Wilhelm Zeuschner - Project started: 14.03.2018
+//I'd recommend changing line 217 in "MD_MAX72xx_font.cpp" to "  5, 0x00, 0x42, 0x7f, 0x40, 0x00,	// 49 - '1'". This ensures even character spacing.
 
 
 //Libraries
@@ -9,10 +10,7 @@
 #include <Wire.h>
 #include <SPI.h>
 
-
-
 //Defines
-//#define	PRINT(s, v)	{ Serial.print(F(s)); Serial.print(v); }
 #define	MAX_DEVICES	5	//Number of chained Martices
 #define	CLK_PIN		13  // SPI SCK
 #define	DATA_PIN	11  // SPI MOSI
