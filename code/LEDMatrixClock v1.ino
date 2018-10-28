@@ -1,6 +1,7 @@
-//Wilhelm Zeuschner - Project started: 14.03.2018
-//I'd recommend changing line 217 in "MD_MAX72xx_font.cpp" to "  5, 0x00, 0x42, 0x7f, 0x40, 0x00,	// 49 - '1'". This ensures even character spacing.
-
+//Wilhelm Zeuschner - Started on 14.03.2018
+//I'd recommend changing line 258 in "MD_MAX72xx_font.cpp" to "  5, 0x00, 0x42, 0x7f, 0x40, 0x00,  // 49 - '1'". This ensures even character spacing.
+//This changes the width of the character "1"
+//If the library gets updated this line number may change!
 
 //Libraries
 #include <RtcDS3231.h>
@@ -10,7 +11,10 @@
 #include <Wire.h>
 #include <SPI.h>
 
+
+
 //Defines
+//#define	PRINT(s, v)	{ Serial.print(F(s)); Serial.print(v); }
 #define	MAX_DEVICES	5	//Number of chained Martices
 #define	CLK_PIN		13  // SPI SCK
 #define	DATA_PIN	11  // SPI MOSI
@@ -23,8 +27,19 @@
 //Global message buffers shared by Serial and Scrolling functions
 #define	BUF_SIZE	10
 
+//Change this if your Matrix doesn't work:
+#define HARDWARE_TYPE MD_MAX72XX::FC16_HW
+/*
+ * https://majicdesigns.github.io/MD_MAX72XX/page_hardware.html
+    PAROLA_HW,    ///< Use the Parola style hardware modules.
+    GENERIC_HW,   ///< Use 'generic' style hardware modules commonly available.
+    ICSTATION_HW, ///< Use ICStation style hardware module.
+    FC16_HW       ///< Use FC-16 style hardware module.
+*/
 
-MD_MAX72XX matrix = MD_MAX72XX(CS_PIN, MAX_DEVICES);	//Create Matrix Instance
+
+
+MD_MAX72XX matrix = MD_MAX72XX(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);	//Create Matrix Instance
 RtcDS3231<TwoWire> rtc(Wire);							//Create RTC Instance
 DHT dht(DHTPIN, DHTTYPE);								//Create DHT11 Instance
 
@@ -57,6 +72,7 @@ void setup() {
 	
 	dht.begin();
 	Serial.begin(115200);
+  Serial.println("Online");
 }
 
 void loop() {
