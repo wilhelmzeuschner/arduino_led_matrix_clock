@@ -2,6 +2,7 @@
 //I'd recommend changing line 258 in "MD_MAX72xx_font.cpp" to "  5, 0x00, 0x42, 0x7f, 0x40, 0x00,  // 49 - '1'". This ensures even character spacing.
 //This changes the width of the character "1"
 //If the library gets updated this line number may change!
+//Nov. 2019: There were changes to the library and the font, which I personally didn't  like. I have included MD_MAX72xx_font.cpp that has the older font from the images on Thingiverse
 
 //Libraries
 #include <RtcDS3231.h>
