@@ -16,12 +16,16 @@ https://www.thingiverse.com/thing:2861401
 The following libraries are needed:
 
 https://github.com/Makuna/Rtc & https://github.com/MajicDesigns/MD_MAX72XX
-I'd recommend changing line 258 in "MD_MAX72xx_font.cpp" to "  5, 0x00, 0x42, 0x7f, 0x40, 0x00,  // 49 - '1'". This ensures even character spacing.
+The MD_MAX72XX library is supplied with this repo.
+All the edits mentioned down below are already done. Just download it and extract it to your Arduino library directory.
 
-If the library gets updated this line number may change!
-Current version: Matrix Library v.3.0.2
+*Old: I'd recommend changing line 258 in "MD_MAX72xx_font.cpp" to "  5, 0x00, 0x42, 0x7f, 0x40, 0x00,  // 49 - '1'". This ensures even character spacing.
+*If the library gets updated this line number may change!
+*Current version: Matrix Library v.3.0.2
 
 Optional: https://github.com/adafruit/DHT-sensor-library
+
+Adjust_RTC.ino can be used to set the time of the RTC manually.
 
 This code, combined with the enclosure is quite flexible, thanks to the Arduino IDE.
 You could use an ESP8266 for example and get accurate time information via NTP.
